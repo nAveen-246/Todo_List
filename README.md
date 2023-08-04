@@ -1,0 +1,11 @@
+# TODO-LIST
+- it is a to-do list in which user can add his tasks
+- install nodemon and also the following dependencies
+  - "dependencies": {
+   - "body-parser": "1.19.1",
+   - "ejs": "3.1.6",
+   - "express": "4.17.2",
+   - "https": "1.0.0",
+   - "lodash": "4.17.21",
+   - "mongoose": "6.2.3"
+ - }
