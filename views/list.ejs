@@ -8,17 +8,17 @@
         <% for(var i=0;i<n;i++){%>
             <form action="/delete" method="post">
                 <div class="item">
-                    <input type="checkbox" name="checkBox" value=<%=new_item[i]._id%> onChange="this.form.submit()">
-                    <input type="hidden" name="ListName" value=<%=Title%> >
+                    <input type="checkbox" name="checkBox" autocomplete="off" value=<%=new_item[i]._id%> onChange="this.form.submit()">
+                    <input autocomplete="off" type="hidden" name="ListName" value=<%=Title%> >
                     <p><%=new_item[i].thing%></p>
                 </div>
             </form>
         <%}%>
         <form class="item" action="/" method="post">
-            <input type="text" name="Addwork" placeholder="Add a work">
+            <input autocomplete="off" type="text" name="Addwork" placeholder="Add a work">
             <button type ="submit" name="list" value=<%=Title %> >+</button>
         </form>
     </div>
-        
+
     </body>
 <%- include("footer.ejs");-%>
